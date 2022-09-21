@@ -1,0 +1,359 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: 'MuseoSans';
+	src:  url('font/museosanscyrl_100.otf');
+}
+
+@font-face {
+	font-family: 'Avenir';
+	src: url('font/AvenirLTStd-Roman.otf');
+}
+
+@font-face {
+	font-family: 'Avenir Book';
+	src: url('font/AvenirLTStd-Book.otf');
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('font/proximanova_regular.ttf');
+}
+
+html, body {
+	max-width: 1440px;
+}
+
+.header {
+	height: 80px;
+	background: #f7fdfe;
+	display: flex;
+	justify-content: center;
+}
+
+.header--mini {
+	width: 940px;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header--mini__title {
+	font-family: 'MuseoSans';
+	font-size: 30px;
+	text-transform: uppercase;
+	letter-spacing: 0.025em;
+	color: #82868f;
+}
+
+.nav {
+	width: 345px;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: 'MuseoSans';
+	text-transform: uppercase;
+}
+
+.nav__element {
+	letter-spacing: 0.025em;
+	color: #82868f;
+	text-decoration: none;
+	padding: 10px;
+	transition: .2s;
+	border-radius: 19.5px;
+}
+
+.nav__element:hover, .nav__element:focus {
+	color: #f7fdfe;
+	padding: 10px;
+	border: 1px solid #0ebfdd;
+	background: #0ebfdd;
+}
+
+.wrapper__1 {
+	height: 600px;
+	background-image: url('img/bg__1.jpg');
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	font-family: 'Avenir';
+}
+
+.wrapper__1--mini {
+	width: 804px;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #f7fdfe;
+}
+
+.wrapper__1__title {
+	font-size: 44px;
+	margin-bottom: 31px;
+}
+
+.wrapper__1__text {
+	font-size: 20px;
+}
+
+.wrapper__2 {
+	height: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Avenir';
+}
+
+.wrapper__2--mini {
+	height: 100%;
+	width: 804px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.wrapper__2__title {
+	font-size: 44px;
+	color: #0ebfdd;
+	margin-bottom: 32px;
+}
+
+.wrapper__2__text {
+	font-size: 20px;
+	color: #45494d;
+}
+
+.wrapper__3 {
+	height: 600px;
+	background: #0ebfdd;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrapper__3--mini {
+	height: 478px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrapper__3__title-container {
+	width: 590px;
+	height: 139px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.imgs {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.img {
+	text-align: center;
+}
+
+.img__subtitle {
+	font-family: Avenir;
+	font-size: 18px;
+	color: #f7fdfe;
+}
+
+.img__subsubtitle {
+	font-family: Avenir Book;
+	font-size: 16px;
+	color: #f7fdfe;
+}
+
+.wrapper__3__title {
+	font-family: Avenir;
+	font-size: 44px;
+	color: #ffffff;
+}
+
+.wrapper__3__button-container {
+	width: 590px;
+	height: 144px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.wrapper__3__button {
+	font-family: 'MuseoSans';
+	font-size: 14px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #f7fdfe;
+	border: 1px solid #f9fbfb;
+	border-radius: 19.5px;
+	background: none;
+	padding-left: 36px;
+	padding-right: 36px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	transition: .2s;
+}
+
+.wrapper__3__button:hover {
+	background: #f7fdfe;
+	color: #0ebfdd;
+	transform: scale(1.5);
+}
+
+.wrapper__4 {
+	height: 600px;
+	background-image: url('img/img_map.jpg');
+}
+
+.wrapper__4__company-info {
+	width: 186px;
+	height: 81px;
+	position: relative;
+	left: 377px;
+	top: 193px;
+	background: #45494d;
+	border-radius: 4px;
+	font-family: 'Proxima Nova';
+}
+
+.wrapper__4__company-info:before {
+	content: ""; 
+	border: solid transparent;
+	position: absolute; 
+ 	top: 100%;
+	left: 18px;
+	border-top-color: #45494d;
+	border-width: 8px;
+	margin-left: -1px;
+}
+
+.company-info, .company-street, .company-adress {
+	width: 104px;
+}
+
+.company-info {
+	font-size: 15px;
+	color: #ffffff;
+}
+
+.company-street, .company-adress {
+	font-size: 13px;
+	color: #888e95;
+}
+
+.wrapper__4__company-info--mini {
+	display: flex;
+	flex-direction: column;
+	padding-left: 17px;
+	padding-top: 13px;
+}
+
+.pointer-1 {
+	position: relative;
+	width: 28px;
+	height: 36px;
+	left: 387px;
+	top: 206px;
+}
+
+.pointer-2 {
+	position: relative;
+	width: 28px;
+	height: 36px;
+	left: 691px;
+	top: 80px;
+}
+
+.pointer-3 {
+	position: relative;
+	width: 28px;
+	height: 36px;
+	left: 454px;
+	top: 366px;
+}
+
+.footer {
+	height: 120px;
+	background: #45494d;
+	display: flex;
+	justify-content: center;
+}
+
+.footer--mini {
+	width: 940px;
+}
+
+.footer-top {
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid rgba(138, 141, 145, 0.3);
+}
+
+.nav--footer--left {
+	display: flex;
+	justify-content: space-between;
+	width: 222px;
+}
+
+.nav--footer--right {
+	width: 140px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav--footer__element {
+	font-family: 'MuseoSans';
+	font-size: 12.1px;
+	text-transform: uppercase;
+	letter-spacing: 0.025em;
+	color: #d7dee4;
+	text-decoration: none;
+}
+
+.footer-bottom {
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: right;
+}
+
+.nav--footer--bottom {
+	width: 396px;
+	float: right;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav--footer--bottom__element {
+	font-family: 'MuseoSans';
+	font-size: 12px;
+	letter-spacing: 0.025em;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #73767a;
+}
+
+.line {
+	color: #73767a;
+	font-family: 'MuseoSans';
+	font-size: 12px;
+}
